@@ -1,0 +1,14 @@
+* text=auto
+# Windows batch files need CRLF (cmd.exe mis-reads labels in LF-only files)
+*.bat text eol=crlf
+*.cmd text eol=crlf
+# macOS / Linux scripts must stay LF or "#!/bin/bash" breaks
+*.command text eol=lf
+*.sh text eol=lf
+*.ino text eol=lf
+*.yml text eol=lf
+# never touch binaries
+*.png binary
+*.jpg binary
+*.ico binary
+*.icns binary

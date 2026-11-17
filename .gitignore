@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.conda_env/
+.conda_bat
+*.egg-info/
+
+# Build output (the installers are made by GitHub Actions)
+build/
+dist/
+installer_out/
+release_files/
+
+# Data, recordings and results: never commit these
+data/
+recordings/
+results/
+output/
+*.csv
+*.log
+*.mp4
+*.avi
+*.mov
+*.tif
+*.tiff
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.mat
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
