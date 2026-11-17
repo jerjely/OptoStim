@@ -903,4 +903,9 @@ def run_gui() -> int:
     apply_style(app)
     win = MainWindow()
     win.show()
-    return app.exec()
+    rc = app.exec()
+    try:
+        win.settings.sync()      # the process may leave without interpreter teardown
+    except Exception:
+        pass
+    return rc
